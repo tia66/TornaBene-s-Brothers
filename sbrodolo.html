@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tornabene Brothers Photography — Fotografi di Matrimonio di Lusso in Italia</title>
+<meta name="description" content="Tornabene Brothers Photography — Fotografi di matrimonio d'autore in Italia. Raccontiamo storie d'amore attraverso immagini cinematografiche ed emozionali. Matrimoni di lusso.">
+<meta name="keywords" content="fotografi matrimonio Italia, luxury wedding photographer, destination wedding Italy, fotografo matrimonio Sicilia, fotografia matrimonio cinematografica">
+<meta property="og:title" content="Tornabene Brothers Photography">
+<meta property="og:description" content="Fotografi di matrimonio d'autore. Raccontiamo la tua storia d'amore.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="pippoforte.css">
+</head>
+<body>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" role="dialog" aria-label="Anteprima immagine" onclick="closeLightbox(event)">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" onclick="document.getElementById('lightbox').classList.remove('open')">&#x2715; &nbsp; Chiudi</button>
+    <button class="lightbox-nav" id="lb-prev" onclick="changeLb(-1)">&#8592;</button>
+    <button class="lightbox-nav" id="lb-next" onclick="changeLb(1)">&#8594;</button>
+    <div id="lb-content" style="width:100%;display:flex;align-items:center;justify-content:center;min-height:400px">
+      <div style="text-align:center;color:rgba(233,223,194,.5)">
+        <div style="font-family:var(--serif);font-size:1.5rem;font-style:italic;margin-bottom:1rem">Anteprima non disponibile</div>
+        <div style="font-family:var(--sans);font-size:.75rem;letter-spacing:.2em;text-transform:uppercase">Galleria dimostrativa</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MOBILE MENU -->
+<nav class="mobile-menu" id="mobile-menu" aria-label="Menu mobile">
+  <a href="#hero" onclick="closeMobile()">Home</a>
+  <a href="#about" onclick="closeMobile()">La Nostra Storia</a>
+  <a href="#portfolio" onclick="closeMobile()">Portfolio</a>
+  <a href="#experience" onclick="closeMobile()">L'Esperienza</a>
+  <a href="#testimonials" onclick="closeMobile()">Testimonianze</a>
+  <a href="#contact" onclick="closeMobile()">Contatto</a>
+</nav>
+
+<!-- NAVBAR -->
+<header id="navbar">
+  <a href="#hero" class="nav-logo" aria-label="Tornabene Brothers Photography — Home">
+    Tornabene Brothers
+    <span>Photography</span>
+  </a>
+  <ul class="nav-links" role="navigation" aria-label="Navigazione principale">
+    <li><a href="#about">La Nostra Storia</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#experience">L'Esperienza</a></li>
+    <li><a href="#testimonials">Testimonianze</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a href="#contact" class="nav-cta" aria-label="Prenota una consulenza">Prenota una Consulenza</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Apri menu" onclick="toggleMobile()">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- ═══ HERO ═══ -->
+<section id="hero" role="banner" aria-label="Introduzione">
+  <div class="hero-bg">
+    <div class="hero-bg-image"></div>
+    <div class="hero-shapes"></div>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <div class="hero-eyebrow">Fotografia di Matrimonio · Italia</div>
+    <h1 class="hero-h1">
+      Ogni amore<br>
+      <em>merita una storia</em><br>
+      immortale.
+    </h1>
+    <p class="hero-subtitle">
+      Catturiamo l'essenza del vostro giorno più bello con la sensibilità di un regista e l'occhio di un poeta visivo. Racconti cinematografici per amori senza tempo.
+    </p>
+    <div class="hero-actions">
+      <a href="#portfolio" class="btn-primary">Scopri il Portfolio</a>
+      <a href="#contact" class="btn-outline">Inizia la tua storia</a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <div class="hero-scroll-line"></div>
+    <span>Scorri</span>
+  </div>
+  <div class="hero-social" aria-label="Social media">
+    <a href="#" aria-label="Instagram">Instagram</a>
+    
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee-section" aria-hidden="true">
+  <div class="marquee-track">
+   <!--  <span class="marquee-item">Destination Wedding</span> -->
+   <!--  <span class="marquee-item">Fotografia Editoriale</span>-->
+    <span class="marquee-item">Fidanzamento & Engagement</span>
+    <span class="marquee-item">Love Stories Cinematografiche</span>
+    <span class="marquee-item">Villa Matrimoniali</span>
+    <!-- <span class="marquee-item">Destination Wedding</span> -->
+  <!--  <span class="marquee-item">Fotografia Editoriale</span> -->
+    <span class="marquee-item">Fidanzamento & Engagement</span>
+    <span class="marquee-item">Love Stories Cinematografiche</span>
+    <span class="marquee-item">Villa Matrimoniali</span>
+  </div>
+</div>
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about" aria-labelledby="about-heading">
+  <div style="max-width:1400px;margin:0 auto">
+    <div class="about-grid">
+      <div class="about-visual reveal-left">
+        <div class="about-portrait">
+          <div class="about-portrait-inner"></div>
+          <div class="about-portrait-overlay"></div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+            <div style="text-align:center">
+              <div style="font-family:var(--serif);font-size:3rem;font-style:italic;color:rgba(217,204,170,.3);line-height:1">Tornabene</div>
+              <div style="font-family:var(--sans);font-size:.6rem;letter-spacing:.5em;text-transform:uppercase;color:rgba(201,120,58,.4);margin-top:.5rem">Brothers</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-portrait-frame" aria-hidden="true"></div>
+        <div class="about-badge">
+          <span>Dal</span>
+          *anno di inizio*
+        </div>
+      </div>
+      <div class="about-text reveal-right">
+        <div class="section-eyebrow">La Nostra Storia</div>
+        <h2 class="section-title" id="about-heading">
+          Crediamo che<br>
+          <em>ogni matrimonio</em><br>
+          sia un capolavoro.
+        </h2>
+        <blockquote class="about-quote">
+          "Non siamo semplici fotografi. Siamo narratori di emozioni, custodi dei momenti che il tempo non può cancellare."
+        </blockquote>
+        <p class="section-body" style="margin-bottom:1.5rem">
+*vostra storia        </p>
+        <p class="section-body">
+*vostra storia*        </p>
+        <div class="about-stats">
+          <div class="stat-item reveal reveal-delay-1">
+            <div class="stat-number">n+</div>
+            <div class="stat-label">Matrimoni</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-2">
+            <div class="stat-number">n</div>
+            <div class="stat-label">Paesi</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <div class="stat-number">n</div>
+            <div class="stat-label">Anni di Arte</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TIMELINE -->
+    <div class="timeline">
+      <h3 class="timeline-title reveal">Il nostro <em>percorso</em></h3>
+      <div class="timeline-items">
+        <div class="timeline-item reveal reveal-delay-1">
+          <div class="timeline-dot">&#9670;</div>
+          <div class="timeline-year">anno</div>
+          <div class="timeline-label">Le Origini</div>
+          <div class="timeline-desc">*origini*</div>
+        </div>
+        <div class="timeline-item reveal reveal-delay-2">
+          <div class="timeline-dot">&#9670;</div>
+          <div class="timeline-year">anno</div>
+          <div class="timeline-label">L'Espansione</div>
+          <div class="timeline-desc">*capacita o migliormaenti, da vedere*</div>
+        </div>
+        <div class="timeline-item reveal reveal-delay-3">
+          <div class="timeline-dot">&#9670;</div>
+          <div class="timeline-year">anno</div>
+          <div class="timeline-label">Riconoscimenti</div>
+          <div class="timeline-desc">*lavori fatti, luoghi, sezione da poter cambiare*</div>
+        </div>
+        <div class="timeline-item reveal reveal-delay-4">
+          <div class="timeline-dot">&#9670;</div>
+          <div class="timeline-year">Oggi</div>
+          <div class="timeline-label">L'Arte Continua</div>
+          <div class="timeline-desc">Ogni anno, una selezione esclusiva di matrimoni scelti con cura. Qualità sopra ogni cosa.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="elegant-divider" aria-hidden="true">
+    <div class="elegant-divider-icon">✦</div>
+  </div>
+</section>
+
+<!-- ═══ PORTFOLIO ═══ -->
+<section id="portfolio" aria-labelledby="portfolio-heading">
+  <div class="portfolio-header reveal">
+    <div class="section-eyebrow" style="justify-content:center">Il Nostro Lavoro</div>
+    <h2 class="section-title" id="portfolio-heading" style="text-align:center;margin-bottom:1.2rem">
+      Immagini che<br><em>parlano all'anima</em>
+    </h2>
+    <p class="section-body" style="text-align:center">Una selezione delle nostre storie d'amore più belle. Ogni immagine è un frammento di eternità.</p>
+  </div>
+  <div class="portfolio-filters" role="tablist" aria-label="Filtri portfolio">
+    <!-- <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Tutto</button>
+    <button class="filter-btn" data-filter="matrimoni" role="tab" aria-selected="false">Matrimoni</button>
+    <button class="filter-btn" data-filter="fidanzamento" role="tab" aria-selected="false">Fidanzamento</button>
+   <!--  <button class="filter-btn" data-filter="destination" role="tab" aria-selected="false">Destination Wedding</button> -->
+  <!--   <button class="filter-btn" data-filter="editoriale" role="tab" aria-selected="false">Editoriale</button> -->
+  </div>
+  <div class="masonry-grid" id="masonry-grid" role="list">
+  </div>
+  <div style="text-align:center;margin-top:4rem">
+    <a href="#contact" class="btn-outline reveal">Voglio che raccontiate la mia storia →</a>
+  </div>
+</section>
+
+<!-- ═══ EXPERIENCE ═══ -->
+<section id="experience" aria-labelledby="exp-heading">
+  <div class="experience-intro reveal">
+    <div class="section-eyebrow" style="justify-content:center">Come Lavoriamo</div>
+    <h2 class="section-title" id="exp-heading" style="text-align:center;margin-bottom:1.2rem">
+      Un'esperienza<br><em>senza pari</em>
+    </h2>
+    <p class="section-body" style="text-align:center">Dal primo contatto alla consegna del vostro album, ogni passo è pensato per offrirvi serenità, emozione e un risultato che superi ogni aspettativa.</p>
+  </div>
+  <div class="experience-steps">
+    <div class="exp-card reveal reveal-delay-1">
+      <div class="exp-num">01</div>
+      <h3 class="exp-title">La Prima Conversazione</h3>
+      <p class="exp-body">*spiega*</p>
+      <div class="exp-accent"></div>
+    </div>
+    <div class="exp-card reveal reveal-delay-2">
+      <div class="exp-num">02</div>
+      <h3 class="exp-title">La Prenotazione & il Percorso</h3>
+      <p class="exp-body">*spiega*</p>
+      <div class="exp-accent"></div>
+    </div>
+    <div class="exp-card reveal reveal-delay-3">
+      <div class="exp-num">03</div>
+      <h3 class="exp-title">Il Giorno del Matrimonio</h3>
+      <p class="exp-body">*spiega*</p>
+      <div class="exp-accent"></div>
+    </div>
+    <div class="exp-card reveal reveal-delay-4">
+      <div class="exp-num">04</div>
+      <h3 class="exp-title">Post-Produzione & Consegna</h3>
+      <p class="exp-body">*spiega*</p>
+      <div class="exp-accent"></div>
+    </div>
+  </div>
+  <div class="elegant-divider" aria-hidden="true">
+    <div class="elegant-divider-icon">✦</div>
+  </div>
+</section>
+
+<!-- VIDEO 
+<section id="video-section" aria-labelledby="video-heading">
+  <div class="video-bg-overlay"></div>
+  <div class="video-shapes"></div>
+  <div class="video-content">
+    <div class="section-eyebrow" style="justify-content:center" aria-hidden="true">Cinematografia</div>
+    <h2 class="section-title" id="video-heading">
+      Il cinema<br><em>dell'amore</em>
+    </h2>
+    <p class="section-body">
+      Oltre alla fotografia, realizziamo film matrimoniali d'autore. Storie d'amore che diventano corti cinematografici, da custodire e rivivere per sempre.
+    </p>
+    <a href="#contact" class="btn-primary">Chiedi il tuo Film</a>
+   <div class="video-grid">
+
+  <div class="video-card reveal reveal-delay-1" role="article" aria-label="Film matrimonio">
+
+    <div class="video-placeholder">
+
+      <div class="video-media">
+        <video class="video-element" autoplay muted loop playsinline>
+          <source src="videos/film1.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="video-play-btn" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+      </div>
+
+      <div class="video-card-title">*Titolo Film*</div>
+
+      <div style="font-family:var(--sans);font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:rgba(217,204,170,.3);margin-top:.3rem">
+        *Anno · Location*
+      </div>
+
+    </div>
+  </div>
+
+  <div class="video-card reveal reveal-delay-2" role="article" aria-label="Film matrimonio">
+
+    <div class="video-placeholder">
+
+      <div class="video-media">
+        <video class="video-element" autoplay muted loop playsinline>
+          <source src="videos/film2.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="video-play-btn" aria-hidden="true">
+        <svg viewBox="0 0 24 24">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+      </div>
+
+      <div class="video-card-title">*Titolo Film*</div>
+
+      <div style="font-family:var(--sans);font-size:.6rem;letter-spacing:.25em;text-transform:uppercase;color:rgba(217,204,170,.3);margin-top:.3rem">
+        *Anno · Tipologia*</div>
+
+    </div>
+  </div>
+
+</div>
+  </div>
+</section> -->
+
+<!-- ═══ TESTIMONIALS ═══ -->
+ <!-- ESEMPIO CON IMMAGINI
+<section id="testimonials" aria-labelledby="testi-heading">
+  <div class="testimonials-header reveal">
+    <div class="section-eyebrow" style="justify-content:center">Parole d'Amore</div>
+    <h2 class="section-title" id="testi-heading" style="text-align:center">
+      Le voci di<br><em>chi ci ha scelto</em>
+    </h2>
+  </div>
+
+  <div class="testimonials-track-wrapper">
+    <div class="testimonials-track" id="testi-track" role="list">
+
+      <article class="testimonial-card" role="listitem">
+        <img src="img/review1.jpg" alt="Recensione cliente 1" style="width:100%;border-radius:12px;">
+      </article>
+
+      <article class="testimonial-card" role="listitem">
+        <img src="img/review2.jpg" alt="Recensione cliente 2" style="width:100%;border-radius:12px;">
+      </article>
+
+      <article class="testimonial-card" role="listitem">
+        <img src="img/review3.jpg" alt="Recensione cliente 3" style="width:100%;border-radius:12px;">
+      </article>
+
+      <article class="testimonial-card" role="listitem">
+        <img src="img/review4.jpg" alt="Recensione cliente 4" style="width:100%;border-radius:12px;">
+      </article>
+
+    </div>
+  </div>
+
+  <div class="testimonials-nav" aria-label="Navigazione testimonianze">
+    <button class="testi-btn" id="testi-prev" onclick="slideTestimonials(-1)">←</button>
+    <button class="testi-btn" id="testi-next" onclick="slideTestimonials(1)">→</button>
+  </div>
+</section>
+
+
+ -->
+<section id="testimonials" aria-labelledby="testi-heading">
+  <div class="testimonials-header reveal">
+    <div class="section-eyebrow" style="justify-content:center">Parole d'Amore</div>
+    <h2 class="section-title" id="testi-heading" style="text-align:center">
+      Le voci di<br><em>chi ci ha scelto</em>
+    </h2>
+  </div>
+
+  <div class="testimonials-track-wrapper">
+    <div class="testimonials-track" id="testi-track" role="list">
+
+      <article class="testimonial-card" role="listitem">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"*recensione*"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">**</div>
+          <div>
+            <div class="author-name">*nome*</div>
+            <div class="author-event">*evento · location · anno*</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card" role="listitem">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"*recensione*"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">**</div>
+          <div>
+            <div class="author-name">*nome*</div>
+            <div class="author-event">*evento · location · anno*</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="testimonial-card" role="listitem">
+        <div class="testimonial-stars">★★★★★</div>
+        <p class="testimonial-text">"*recensione*"</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">**</div>
+          <div>
+            <div class="author-name">*nome*</div>
+            <div class="author-event">*evento · location · anno*</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+
+  <div class="testimonials-nav" aria-label="Navigazione testimonianze">
+    <button class="testi-btn" onclick="slideTestimonials(-1)">←</button>
+    <button class="testi-btn" onclick="slideTestimonials(1)">→</button>
+  </div>
+</section>
+</section>
+
+<!-- ═══ FAQ ═══ -->
+<section id="faq" aria-labelledby="faq-heading">
+  <div class="faq-container">
+    <div class="faq-header reveal">
+      <div class="section-eyebrow" style="justify-content:center">Domande Frequenti</div>
+      <h2 class="section-title" id="faq-heading" style="text-align:center;margin-bottom:1rem">
+        Tutto quello che<br><em>vorreste sapere</em>
+      </h2>
+      <p class="section-body" style="text-align:center;max-width:500px;margin:0 auto">Raccogliamo le domande più frequenti delle nostre coppie. Se la vostra risposta non è qui, siamo sempre disponibili a parlare direttamente.</p>
+    </div>
+
+    <div id="faq-list" role="list">
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-a1">
+          Come funziona la prenotazione?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-a1" role="region">
+<p>*spiega*</p>        </div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-a2">
+          In quanto tempo consegnate le fotografie?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-a2" role="region">
+<p>*spiega*</p>        </div>
+      </div>
+     
+      </div>
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-a4">
+          Quali sono i vostri prezzi?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-a4" role="region">
+<p>*spiega*</p>        </div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-a5">
+          Realizzate anche gli album?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-a5" role="region">
+<p> *spiega*</p>        </div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-a6">
+          Siete disponibili a viaggiare in tutta Italia?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-a6" role="region">
+<p>*spiega*</p>        </div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-a7">
+          Offrite anche riprese video cinematografiche?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-a7" role="region">
+<p>*spiega*</p>>        </div>
+      </div>
+      <div class="faq-item" role="listitem">
+        <button class="faq-question" aria-expanded="false" aria-controls="faq-a8">
+          Possiamo richiedere un'esperienza fotografica personalizzata?
+          <span class="faq-icon" aria-hidden="true">+</span>
+        </button>
+        <div class="faq-answer" id="faq-a8" role="region">
+<p>*spiega*</p>    </div>
+      </div>
+    </div>
+  </div>
+  <div class="elegant-divider" aria-hidden="true">
+    <div class="elegant-divider-icon">✦</div>
+  </div>
+</section>
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact" aria-labelledby="contact-heading">
+  <div class="contact-grid">
+    <div class="contact-info reveal-left">
+      <div class="contact-intro">
+        <div class="section-eyebrow">Inizia la tua Storia</div>
+        <h2 class="section-title" id="contact-heading">
+          Parliamo del<br>
+          <em>vostro giorno</em><br>
+          più bello.
+        </h2>
+        <p class="section-body" style="margin-top:1.5rem;max-width:420px">
+          Siamo selettivi riguardo alle coppie con cui collaboriamo, perché vogliamo dedicarci completamente a ogni storia. Se sentite che il nostro stile rispecchia la vostra visione, contattateci: sarà il primo passo verso qualcosa di straordinario.
+        </p>
+      </div>
+      <div class="contact-details">
+        <div class="contact-detail">
+          <div class="contact-detail-icon" aria-hidden="true">@</div>
+          <div>
+            <div class="contact-detail-label">Email</div>
+            <div class="contact-detail-value">email@esempio</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+          <div class="contact-detail-icon" aria-hidden="true">&#9990;</div>
+          <div>
+            <div class="contact-detail-label">Telefono & WhatsApp</div>
+            <div class="contact-detail-value">+39 331 472 8364</div>
+          </div>
+        </div>
+        <div class="contact-detail">
+         
+      </div>
+      <div class="contact-social" aria-label="Social media">
+        <a href="https://www.instagram.com/tornabenebrothersphoto?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="social-link" aria-label="Instagram">IG</a>
+       <!--  <a href="#" class="social-link" aria-label="Vimeo">VI</a>
+        <a href="#" class="social-link" aria-label="Pinterest">PI</a>
+        <a href="#" class="social-link" aria-label="Facebook">FB</a>-->
+      </div>
+      <a href="https://wa.me/393456789000" class="whatsapp-cta" aria-label="Contattaci su WhatsApp">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Scrivici su WhatsApp
+      </a>
+    </div>
+
+   <div class="contact-form reveal-right" role="form" aria-label="Modulo di contatto">
+  <div style="margin-bottom:2.5rem">
+    <div class="section-eyebrow">Modulo di Contatto</div>
+    <h3 style="font-family:var(--serif);font-size:1.6rem;font-weight:300;color:var(--cream);line-height:1.2">
+      Raccontateci la vostra <em style="font-style:italic">storia</em>
+    </h3>
+  </div>
+
+  <form id="contact-form" action="contact.php" method="POST" novalidate>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label" for="nome-sposa">Nome della Sposa</label>
+        <input type="text" id="nome-sposa" name="nome_sposa" class="form-input" placeholder="Il tuo nome" required autocomplete="given-name">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="nome-sposo">Nome dello Sposo</label>
+        <input type="text" id="nome-sposo" name="nome_sposo" class="form-input" placeholder="Il suo nome" required autocomplete="given-name">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label" for="email">Indirizzo Email</label>
+        <input type="email" id="email" name="email" class="form-input" placeholder="la-vostra@email.com" required autocomplete="email">
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="telefono">Numero di Telefono</label>
+        <input type="tel" id="telefono" name="telefono" class="form-input" placeholder="+39..." autocomplete="tel">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label class="form-label" for="data-matrimonio">Data del Matrimonio</label>
+        <input type="date" id="data-matrimonio" name="data_matrimonio" class="form-input" required>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="location">Location del Matrimonio</label>
+        <input type="text" id="location" name="location" class="form-input" placeholder="Es. Napoli, Campania">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="servizio">Tipo di Servizio</label>
+      <select id="servizio" name="servizio" class="form-select" required>
+        <option value="" disabled selected>Seleziona il servizio desiderato</option>
+        <option value="foto">Solo Fotografia</option>
+        <option value="video">Solo Cinematografia</option>
+        <option value="foto-video">Fotografia + Cinematografia</option>
+        <option value="destination">Destination Wedding</option>
+        <option value="engagement">Servizio di Fidanzamento</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label class="form-label" for="messaggio">La Vostra Storia</label>
+      <textarea id="messaggio" name="messaggio" class="form-textarea" rows="4" placeholder="Raccontateci della vostra storia d'amore, della location sognata, del vostro stile..."></textarea>
+    </div>
+
+    <button type="submit" class="form-submit">Invia la Tua Richiesta</button>
+
+    <div class="form-message" id="form-message" role="alert" aria-live="polite"></div>
+
+  </form>
+</div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer role="contentinfo">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="nav-logo" style="font-size:1.1rem;margin-bottom:1rem">
+        Tornabene Brothers
+        <span>Photography</span>
+      </div>
+      <p class="footer-desc">Fotografi di matrimonio d'autore con base a Palermo, Sicilia. Raccontiamo storie d'amore attraverso immagini cinematografiche, emozionali e senza tempo. Disponibili in tutta Italia e nel mondo.</p>
+      <div style="font-family:var(--sans);font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(201,120,58,.5);margin-top:.5rem">Palermo · Roma · Milano · Mondo</div>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigazione</div>
+      <ul class="footer-links">
+        <li><a href="#about">La Nostra Storia</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#experience">L'Esperienza</a></li>
+        <li><a href="#video-section">Film</a></li>
+        <li><a href="#testimonials">Testimonianze</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contatto</a></li>
+      </ul>
+    </div>
+    <div>
+      <div class="footer-col-title">Servizi</div>
+      <ul class="footer-links">
+       <!--  <li><a href="#portfolio">Matrimoni</a></li> 
+        <li><a href="#portfolio">Fidanzamento</a></li>
+        <!-- <li><a href="#portfolio">Destination Wedding</a></li> -->
+       <!--  <li><a href="#video-section">Film Cinematografici</a></li> -->
+      <!--   <li><a href="#portfolio">Editoriale</a></li> -->
+        <li><a href="#contact">Album Artigianali</a></li>
+      </ul>
+    </div>
+   
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">
+      &copy; 2024 Tornabene Brothers Photography. Tutti i diritti riservati. 
+    </div>
+    <div class="footer-legal">
+      <a href="/privacy-policy.html">Privacy Policy</a>
+      <a href="#" onclick="alert('Pagina in arrivo')">Cookie Policy</a>
+    </div>
+  </div>
+</footer>
+
+<script src="legohorizon.js"></script>
+</body>
+
+</html>
